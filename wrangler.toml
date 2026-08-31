@@ -1,0 +1,13 @@
+name = "welcome-bot"
+main = "src/index.ts"
+compatibility_date = "2026-07-15"
+workers_dev = true
+
+[[rules]]
+type = "Text"
+globs = ["**/*.txt"]
+fallback = true
+fallthrough = false
+
+[observability]
+enabled = true

@@ -1,0 +1,5 @@
+Customise your welcome message by editing the welcome.txt file. \
+
+You can add your own text, images or links to make it more personal and engaging for your users.
+
+For any support or questions, contact @SliceBots

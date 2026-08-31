@@ -1,0 +1,31 @@
+{
+  "name": "WelcomeBot",
+  "version": "1.0.0",
+  "description": "Telegram welcome bot on Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "grammy": "^1.30.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240821.1",
+    "typescript": "^5.5.4",
+    "wrangler": "^3.72.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "BOT_TOKEN": {
+        "description": "Enter your Telegram Bot Token from the setup page."
+      },
+      "BOT_INFO": {
+        "description": "Enter your Bot Info JSON from the setup page."
+      },
+      "SECRET_KEY": {
+        "description": "Enter the secret key from the setup page."
+      }
+    }
+  }
+}
